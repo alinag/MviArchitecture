@@ -56,6 +56,7 @@ class TaskDetailsFragment : Fragment() {
             task_details_name.setText(it.name)
             task_details_description.setText(it.description)
         })
+        back_button.setOnClickListener { fragmentManager?.popBackStack() }
     }
 
     private fun setupViewModel() {
